@@ -1,0 +1,57 @@
+@import 'colors';
+
+footer{
+    background-color: $first;
+    height: 200px;
+    width: 100%;
+    padding: 2rem;
+    color: $dark;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+
+    > div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+        > h1{
+            font-size:900 2rem $text1;
+            text-transform: uppercase;
+            color: $third;
+        }
+        
+        > p{
+            // text-transform: uppercase;
+            font:600 0.9rem $text2;
+        }
+
+    }
+    > div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    
+        > h4{
+          font: 400 2rem $text1;  
+          margin: 1.5rem 0;
+          text-align: center;
+        }
+
+        > div{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            > a{
+                // text-decoration: none;
+                color: $dark;
+                font: 900 1rem $text2;
+                margin: 15px;
+
+                &:hover{
+                    color: $third;
+                }
+            }
+        }
+    }
+}
